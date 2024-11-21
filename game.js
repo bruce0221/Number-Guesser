@@ -49,6 +49,12 @@ guessButton.addEventListener('click', () => {
   // Set the correct disabled state for the buttons
   guessButton.setAttribute('disabled', true)
   nextRoundButton.removeAttribute('disabled');
+
+  //alert out of range
+
+  outofRange(currentHumanGuess)
+
+
 });
 
 nextRoundButton.addEventListener('click', () => {
